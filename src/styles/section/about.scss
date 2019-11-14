@@ -1,0 +1,33 @@
+.about-section {
+  padding: rem(107px) 0 rem(45px);
+}
+.about-inner {
+  max-width: rem(920px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.about-inner__left {
+  width: 27.7%;
+  margin-right: rem(30px);
+}
+.about-inner__right {
+  width: 69%;
+  .section-title {
+    margin-bottom: rem(20px);
+  }
+}
+.about-inner__left_img {
+  width: 100%;
+  height: auto;
+}
+.about-inner__right__text {
+  p {
+    font-weight: normal;
+    @include font-size(12px);
+    line-height: rem(15px);
+    letter-spacing: 0.01em;
+    text-transform: none;
+    margin-bottom: rem(10px);
+  }
+}

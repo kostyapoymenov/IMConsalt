@@ -1,0 +1,34 @@
+@import "normalize";
+
+// libruary
+@import "lib/owl.carousel.scss";
+
+//config
+@import "config/variable.scss";
+@import "config/mixins.scss";
+
+//resolution
+$tablets: 768px;
+$phones: 667px;
+$phones-xs: 568px;
+
+//base
+@import "layout/font.scss";
+@import "layout/base.scss";
+@import "layout/adjustment.scss";
+
+//section
+@import "section/header.scss";
+@import "section/banner.scss";
+@import "section/advantage.scss";
+@import "section/direction.scss";
+@import "section/about.scss";
+@import "section/partner.scss";
+@import "section/licens.scss";
+@import "section/feedback.scss";
+@import "section/footer.scss";
+@import "section/modal.scss";
+
+
+// media-quries
+@import "section/media.scss";

@@ -1,0 +1,219 @@
+extends ../loyout
+
+block variables
+    - var title= "ИМ Консалт"
+block content
+    header.header
+        .container
+            .header__inner
+                .header__logo
+                    a.logo(href="#")
+                        img.logo__img(src="images/content/logo.png", alt="")
+                .heder__nav
+                    nav.nav
+                        ul.nav__list
+                            li.nav__list_item
+                                a.nav__list_link(href="") Услуги
+                            li.nav__list_item
+                                a.nav__list_link(href="") База знаний
+                            li.nav__list_item
+                                a.nav__list_link(href="") Новости
+                            li.nav__list_item
+                                a.nav__list_link(href="") Контакты
+    section.banner
+        .container
+            .banner-inner
+                .banner-block
+                    .banner-block__logo
+                        .logo
+                            img.logo__img(src="images/content/logo.png", alt="")
+                    .banner-block__text
+                        h1.banner-block__title 
+                            span.banner-block__title_span BIM-технологии
+                            <br> внедрение. сопровождение. обучение. 
+                        .banner-block__descript мы предоставляем самый полный комплекс услуг по внедрению технологии информационного моделирования BIM
+                .banner__btn
+                    a.btn-down(href="")
+    section.advant
+        .container
+            .advantage-inner
+                .block.block--350
+                    .block__item
+                        .advantage-block
+                            .advantage-block__num 1000 00
+                            .advantage-block__text внедрение. сопровождение. обучение.
+                            .advantage-block__soure
+                                a.advantage-block__link(href="") Источник
+                    .block__item
+                        .advantage-block
+                            .advantage-block__num 1000 00
+                            .advantage-block__text внедрение. сопровождение. обучение.
+                            .advantage-block__soure
+                                a.advantage-block__link(href="") Источник
+                    .block__item
+                        .advantage-block
+                            .advantage-block__num 1000 00
+                            .advantage-block__text внедрение. сопровождение. обучение.
+                            .advantage-block__soure
+                                a.advantage-block__link(href="") Источник
+    section.direction-section
+        .container
+            .direction__inner
+                .block.block--350
+                    .block__item
+                        .direction__wrap
+                            .direction__pic(style="background-image: url('images/content/direction_1.png')")
+                            .direction__content
+                                .direction__content__title Внедрение BIM технологий и систем документооборота
+                                ul.direction__content__text
+                                    li.direction__content__text_li Составление регламентирующих документов (EIR, BEP)
+                                    li.direction__content__text_li Составление требований к ландшафту
+                                    li.direction__content__text_li Помощь в подборе специалистов
+                                .direction__content__btn
+                                    a.btn(href="") Подробнее 
+                    .block__item
+                        .direction__wrap
+                            .direction__pic(style="background-image: url('images/content/direction_2.png')")
+                            .direction__content
+                                .direction__content__title Обучение 
+                                ul.direction__content__text
+                                    li.direction__content__text_li Обучение BIM технологиям и проведение сертификации специалистов
+                                .direction__content__btn
+                                    a.btn(href="") Подробнее 
+                    .block__item
+                        .direction__wrap
+                            .direction__pic(style="background-image: url('images/content/direction_3.png')")
+                            .direction__content
+                                .direction__content__title BIM-моделирование
+                                ul.direction__content__text
+                                    li.direction__content__text_li Здесь краткое описание услуги
+                                    li.direction__content__text_li Здесь краткое описание услуги
+                                    li.direction__content__text_li Здесь краткое описание услуги
+                                .direction__content__btn
+                                    a.btn(href="") Подробнее 
+                    .block__item
+                        .direction__wrap    
+                            .direction__pic(style="background-image: url('images/content/direction_4.png')")
+                            .direction__content
+                                .direction__content__title Разработка приложений (СПО)
+                                ul.direction__content__text
+                                    li.direction__content__text_li Составление регламентирующих документов (EIR, BEP)
+                                    li.direction__content__text_li Составление требований к ландшафту
+                                    li.direction__content__text_li Помощь в подборе специалистов
+                                .direction__content__btn
+                                    a.btn(href="") Подробнее 
+                    .block__item
+                        .direction__wrap
+                            .direction__pic(style="background-image: url('images/content/direction_5.png')")
+                            .direction__content
+                                .direction__content__title Базы данных
+                                ul.direction__content__text
+                                    li.direction__content__text_li Разработка баз данных: revit (Autocad, Navisworks, BIM 360, Dynamo, Synchro), aveva, model studio cs (кабельное хозяйство), smartPlant 3D, nanoCAD, siemens NX, tekla Structure, eplan, bentley, cadmatic
+                                .direction__content__btn
+                                    a.btn(href="") Подробнее 
+                    .block__item
+                        .direction__wrap
+                            .direction__pic(style="background-image: url('images/content/direction_6.png')")
+                            .direction__content
+                                .direction__content__title Дополненная виртуальная реальность AR
+                                ul.direction__content__text
+                                    li.direction__content__text_li Составление регламентирующих документов (EIR, BEP)
+                                    li.direction__content__text_li Составление требований к ландшафту
+                                    li.direction__content__text_li Помощь в подборе специалистов
+                                .direction__content__btn
+                                    a.btn(href="") Подробнее 
+    section.about-section
+        .about-inner
+            .about-inner__left
+                img.about-inner__left_img(src="images/content/about_img.png", alt="")
+            .about-inner__right
+                h2.section-title Им Консалт
+                .about-inner__right__text 
+                    p BIM consult (ООО «ИМ Консалт») – российская IT-компания по внедрению, сопровождению и обучению BIM-технологиям. Предоставляет самый полный комплекс услуг по внедрению технологии информационного моделирования BIM: аудит, поставка и настройка Autodesk Revit, внедрение, обучение BIM, сопровождение, разработка семейств и приложений для Revit, последующая поддержка и персональный BIM-менеджер. BIM consult предлагает внедрение PLM (Project Life Management) систем, создание междисциплинарных систем обмена строительными заданиями, моделирование зданий и сооружений для различных участников реализации строительного процесса – от замысла до эксплуатации, а также создание 4D и 5D технологий, разработку плагинов и надстроек для решения BIM-задач.
+                    p Мы предоставляем комплекс услуг по внедрению BIM технологии.
+                    p Сотрудничаем с ведущими предприятиями отрасли, увеличивая эффективность их работы.
+    section.partner-section
+        .container
+            .partner-inner
+                h2.section-title наши партнеры:
+                -  
+                    var partners = [
+                        {   href: "#",
+                            img:  "images/content/partner_1.png",
+                            alt:  "Компания 1"
+                        },
+                        {   href: "#",
+                            img:  "images/content/partner_2.png",
+                            alt:  "Компания 2"
+                        },
+                        {   href: "#",
+                            img:  "images/content/partner_3.png",
+                            alt:  "Компания 3"
+                        },
+                        {   href: "#",
+                            img:  "images/content/partner_4.png",
+                            alt:  "Компания 4"
+                        },
+                        {   href: "#",
+                            img:  "images/content/partner_5.png",
+                            alt:  "Компания 5"
+                        },
+                        {   href: "#",
+                            img:  "images/content/partner_6.png",
+                            alt:  "Компания 6"
+                        }
+                    ]
+                ul.partner-list
+                    each partner in partners
+                        li.partner-list__item
+                            a.partner-list__item_link(href=partner.href)
+                                img.partner-list__item_img(src=partner.img, alt=partner.alt)
+                            span.border-line.border-line--one
+                            span.border-line.border-line--two
+                            span.border-line.border-line--three
+                            span.border-line.border-line--four
+    section.licens-section
+        .container
+            .licens
+                .licens__left
+                    .block.block--370
+                        .block__item
+                            h2.section-title лицензии
+                                span.section-title__transfer и сетификаты
+                .licens__right
+                    .block.block--370
+                        .block__item(style="background-image: url('images/content/licens-1.png')")
+                        .block__item(style="background-image: url('images/content/licens-2.png')")
+                        .block__item(style="background-image: url('images/content/licens-2.png')")
+                        .block__item(style="background-image: url('images/content/licens-1.png')")
+    section.feedback-section
+        .container 
+            .feedback-wrap
+                .feedback
+                    .feedback__title
+                        h2.section-title Отзывы
+                    .feedback__body.owl-carousel
+                        - 
+                            var feedback = [
+                                {   src: "images/content/user-1.jpg",
+                                    text:  "компании PUK WERKE в программном комплексе Autodesk Revitкомпании PUK WERKE в программном комплексе Autodesk Revitкомпании PUK WERKE в программном комплексе Autodesk Revit",
+                                    name:  "Силаев В.Ю."
+                                },
+                                {   src: "images/content/user-1.jpg",
+                                    text:  "компании PUK WERKE в программном комплексе Autodesk Revit",
+                                    name:  "Иванов А.А."
+                                },
+                                {   src: "images/content/user-1.jpg",
+                                    text:  "компании PUK WERKE в программном комплексе Autodesk Revitкомпании PUK WERKE в программном комплексе Autodesk Revit",
+                                    name:  "Петров А.А"
+                                }
+                            ]
+                        each feed in feedback
+                            .fedback__item
+                                .block-void
+                                .fedback__item_content 
+                                    .fedback__item_avatar
+                                        img.fedback__item_img(src=feed.src, alt=feed.name)
+                                    .fedback__item_text
+                                        p=feed.text
+                                .fedback__item_name=feed.name

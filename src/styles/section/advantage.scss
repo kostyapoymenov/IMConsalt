@@ -1,0 +1,37 @@
+.advantage-inner {
+  padding: rem(95px) 0;
+}
+.advantage-block {
+  text-align: center;
+}
+.advantage-block__num {
+  @include font-size(40px);
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: rem(10px);
+  color: $black;
+}
+.advantage-block__text {
+  @include font-size(16px);
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: $black;
+  margin-bottom: rem(10px);
+}
+.advantage-block__link {
+  @include font-size(12px);
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: $black;
+  text-decoration: underline;
+  transition: all .3s ease-out;
+  &:hover {
+    color: $blue;
+    transition: all .3s ease-out;
+  }
+}
