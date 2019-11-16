@@ -11,6 +11,7 @@
 $tablets: 768px;
 $phones: 667px;
 $phones-xs: 568px;
+$media1150: 1150px;
 
 //base
 @import "layout/font.scss";
@@ -26,8 +27,11 @@ $phones-xs: 568px;
 @import "section/partner.scss";
 @import "section/licens.scss";
 @import "section/feedback.scss";
+@import "section/portfolio.scss";
+@import "section/news.scss";
 @import "section/footer.scss";
 @import "section/modal.scss";
+@import "section/burger.scss";
 
 
 // media-quries

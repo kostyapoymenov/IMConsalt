@@ -8,6 +8,12 @@
   font-size: calculateRem($size);
 }
 
+@mixin media1150 {
+  @media screen and (max-width: $media1150) {
+    @content
+  }
+}
+
 @mixin tablets {
   @media screen and (max-width: $tablets) {
     @content
