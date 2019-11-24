@@ -1,0 +1,109 @@
+.basis-section {
+  .banner {
+    background-image: url(../images/bg/base-bg.png);
+  }
+  .banner-block {
+    padding: 4.8% 3% 5.2%;
+  }
+}
+.base-inner {
+  padding: rem(60px) 0 rem(30px);
+  .block {
+    margin-bottom: rem(30px);
+  }
+}
+.filter {
+  margin-bottom: rem(80px);
+}
+.filter__list {
+  display: flex;
+  border-bottom: 1px solid #C4C4C4;
+}
+.filter__item {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  color: #C4C4C4;
+  border: 1px solid #C4C4C4;
+  border-left: 0px;
+  border-bottom: 0px;
+  transition: all .3s ease-out;
+  &:first-child {
+    border-left: 1px solid #C4C4C4;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $blue;
+    color: $white;
+    transition: all .3s ease-out;
+  }
+  &--active {
+    background-color: $blue;
+    color: $white;
+    transition: all .3s ease-out;
+  }
+}
+.block__item {
+  position: relative;
+  &--video {
+    .block__item-pic {
+      &:before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        height: rem(48px);
+        width: rem(48px);
+        background-image: url(../images/icons/play.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all .2s ease-out;
+      }
+    }
+    &:hover {
+      .block__item-pic {
+        &:before{
+          transform: translateX(-50%) translateY(-50%);
+        }
+      }
+    }
+  }
+}
+.block__item-pic {
+  position: relative;
+  height: rem(144px);
+  margin-bottom: 17px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.block__item-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: $black;
+  margin-bottom: 17px;
+}
+.block__item-content {
+  margin-bottom: 17px;
+}
+.block__item-text {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: $black;
+  text-transform: none;
+}
+.block__item-date {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #C4C4C4;
+  text-align: right;
+}

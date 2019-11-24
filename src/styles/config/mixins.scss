@@ -14,6 +14,24 @@
   }
 }
 
+@mixin media1080 {
+  @media screen and (max-width: $media1080) {
+    @content
+  }
+}
+
+@mixin media1010 {
+  @media screen and (max-width: $media1010) {
+    @content
+  }
+}
+
+@mixin media940 {
+  @media screen and (max-width: $media940) {
+    @content
+  }
+}
+
 @mixin tablets {
   @media screen and (max-width: $tablets) {
     @content

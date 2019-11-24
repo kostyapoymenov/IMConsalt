@@ -13,6 +13,7 @@
   font-weight: 700;
   margin-bottom: rem(10px);
   color: $black;
+  display: inline-block;
 }
 .advantage-block__text {
   @include font-size(16px);

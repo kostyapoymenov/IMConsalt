@@ -1,0 +1,133 @@
+.contacts-section {
+  min-height: 100vh;
+  background-image: url(../images/bg/banner-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #F5F5F5;
+  padding: 154px 0 90px;
+}
+.contacts {
+  display: flex;
+}
+.contacts__left {
+  background-color: rgba(255, 255, 255, .9);
+  padding: rem(60px);
+  width: 60%;
+}
+.contacts__right {
+  background-color: rgba(0, 0, 0, .9);
+  padding: rem(60px) rem(60px) 0 rem(60px);
+  width: 40%;
+  color: $white;
+  text-transform: none;
+  font-size: 12px;
+}
+.form {
+  font-size: 12px;
+  text-transform: none;
+}
+.form__text {
+  margin-bottom: rem(28px);
+}
+.form-block--input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .form__block-item {
+    max-width: 250px;
+  }
+}
+.form__block-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17px;
+}
+.form-block__label {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.block-policy__text-bold {
+  font-weight: 700;
+}
+.block-policy {
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+}
+.block-policy__input {
+  opacity: 0;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  z-index: 1;
+  &:checked {
+    + .my-checkbox {
+      background-color: $blue;
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+.my-checkbox {
+  height: 14px;
+  width: 14px;
+  border: 1px solid $black;
+  display: inline-block;
+  position: absolute;
+  margin-top: 1px;
+  &:after {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    background-image: url(../images/icons/check.png);
+    height: 10px;
+    width: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 2px;
+    left: 1px;
+  }
+}
+.block-policy__label {
+  padding-left: 25px;
+  font-size: 12px;
+}
+.block-policy__link {
+  color: $black;
+  display: inline-block;
+  text-decoration: underline;
+  transition: all .3s ease-out;
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+    transition: all .3s ease-out;
+  }
+}
+.contacts__block {
+  margin-bottom: rem(70px);
+}
+.contacts__block_item {
+  margin-bottom: rem(25px);
+  position: relative;
+  padding-left: rem(28px);
+  &--adress {
+
+  }
+  &--time {
+    text-transform: uppercase;
+  }
+  &--phone {
+
+  }
+  &--mail {
+    text-transform: uppercase;
+  }
+  .contacts__block_svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 18px;
+    max-width: 18px;
+  }
+}

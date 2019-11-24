@@ -31,15 +31,20 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  .block__item {
-    &:first-child {
-      margin-left: 0;
-    }
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-    &:nth-child(4n) {
-      margin-left: 0;
+  &--255 {
+    .block__item {
+      flex: 1 1 rem(255px);
+      max-width: rem(255px);
+      margin: 0 rem(15px) rem(15px);
+      &:first-child {
+        margin-left: 0;
+      }
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+      &:nth-child(5n) {
+        margin-left: 0;
+      }
     }
   }
   &--350 {
@@ -47,6 +52,15 @@ section {
       flex: 1 1 rem(350px);
       max-width: rem(350px);
       margin: 0 rem(15px) rem(15px);
+      &:first-child {
+        margin-left: 0;
+      }
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:nth-child(4n) {
+        margin-left: 0;
+      }
     }
   }
   &--370 {
@@ -54,6 +68,15 @@ section {
       flex: 1 1 rem(370px);
       max-width: rem(370px);
       margin: 0 rem(10px) rem(15px);
+      &:first-child {
+        margin-left: 0;
+      }
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:nth-child(4n) {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -88,4 +111,7 @@ section {
   &--center {
     text-align: center;
   }
+}
+.blcok-btn--center {
+  text-align: center;
 }

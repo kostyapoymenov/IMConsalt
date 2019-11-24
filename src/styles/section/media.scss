@@ -45,6 +45,34 @@
     }
   }
 }
+@include media1080 {
+  .form-block--input {
+    .form__block-item {
+      max-width: 220px;
+    }
+  }
+}
+@include media1010 {
+  .form-block--input {
+    .form__block-item {
+      max-width: 200px;
+    }
+  }
+}
+@include media940 {
+  .contacts__left {
+    width: 50%;
+  }
+  .contacts__right {
+    width: 50%;
+  }
+  .form-block--input {
+    .form__block-item {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
 @include tablets {
   .partner-list {
     flex-wrap: wrap;
@@ -61,6 +89,20 @@
   }
   .burger-block {
     display: block;
+  }
+  .contacts {
+    flex-direction: column-reverse;
+  }
+  .contacts__left {
+    width: 100%;
+  }
+  .contacts__right {
+    width: 100%;
+  }
+  .form-block--input {
+    .form__block-item {
+      max-width: 47%;
+    }
   }
 }
 @include phones {
@@ -183,5 +225,19 @@
     a {
       margin-bottom: 8px;
     }
+  }
+  .form-block--input {
+    .form__block-item {
+      max-width: 100%;
+    }
+  }
+  .contacts__left {
+    padding: rem(25px);
+  }
+  .contacts__right {
+    padding: rem(25px) rem(25px) 0 rem(25px);
+  }
+  .form__block .btn {
+    width: 100%;
   }
 }

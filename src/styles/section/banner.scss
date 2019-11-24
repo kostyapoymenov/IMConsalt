@@ -1,10 +1,19 @@
 
 .banner {
   height: 100vh;
-  background-image: url(../images/bg/banner-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: $grey;
+  &--without-pic {
+    .banner-block{
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+.main-banner .banner {
+  background-image: url(../images/bg/banner-bg.png);
 }
 .banner-inner {
   position: relative;
@@ -31,6 +40,7 @@
     background-size: auto 100%;
     z-index: -1;
   }
+  
 }
 .banner-block__logo {
   text-align: center;
@@ -55,6 +65,13 @@
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: $black;
+  &--left {
+    text-align: left;
+    text-transform: none;
+  }
+  p {
+    margin-bottom: 10px;
+  }
 }
 .btn-down {
   height: rem(48px);

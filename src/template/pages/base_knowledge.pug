@@ -1,0 +1,121 @@
+extends ../loyout
+
+block variables
+    - var title= "База знаний"
+block content
+    header.header
+        .container
+            .header__inner
+                .header__logo
+                    a.logo(href="#")
+                        img.logo__img(src="images/content/logo.png", alt="")
+                .heder__nav
+                    nav.nav
+                        ul.nav__list
+                            li.nav__list_item
+                                a.nav__list_link(href="") Услуги
+                            li.nav__list_item
+                                a.nav__list_link(href="") База знаний
+                            li.nav__list_item
+                                a.nav__list_link(href="") Новости
+                            li.nav__list_item
+                                a.nav__list_link(href="") Контакты
+    section.basis-section
+      .banner.banner--without-pic
+        .container
+            .banner-inner
+                .banner-block
+                    .banner-block__text
+                        h1.banner-block__title 
+                            span.banner-block__title_span База знаний
+                        .banner-block__descript.banner-block__descript--left Компания ИМ Консалт принимает участие во многих проектах по внедрению BIM в рабочие процессы строительных, проектных и девелоперских компаний.Мы готовы поделиться своими наработками практического использования технологии BIM для получения максимального эффекта для участников строительного рынка.
+    section.base
+      .container
+        .base-inner
+          .filter
+            ul.filter__list 
+              li.filter__item.filter__item--all.filter__item--active Все уроки
+              li.filter__item.filter__item--video Видео 
+              li.filter__item.filter__item--article Статьи
+          .block.block--255
+            .block__item.block__item--video
+                .block__item-wrap
+                  a.block__item-link(href="")
+                    .block__item-pic(style="background-image: url('images/content/base-1.png')")
+                    .block__item-content
+                        .block__item-title Внедрение BIM технологий и систем документооборота
+                        ul.block__item-text
+                            li.block__item-text_li Составление регламентирующих документов (EIR, BEP)
+                            li.block__item-text_li Составление требований к ландшафту
+                            li.block__item-text_li Помощь в подборе специалистов
+                    .block__item-date 17.02.2019
+            .block__item
+                .block__item-wrap
+                  a.block__item-link(href="")
+                    .block__item-pic(style="background-image: url('images/content/base-1.png')")
+                    .block__item-content
+                        .block__item-title Внедрение BIM технологий
+                        ul.block__item-text
+                            li.block__item-text_li Составление регламентирующих документов (EIR, BEP)
+                    .block__item-date 17.02.2019
+            .block__item.block__item--video
+                .block__item-wrap
+                  a.block__item-link(href="")
+                    .block__item-pic(style="background-image: url('images/content/base-1.png')")
+                    .block__item-content
+                        .block__item-title Внедрение BIM технологий и систем документооборота
+                        ul.block__item-text
+                            li.block__item-text_li Составление регламентирующих документов (EIR, BEP)
+                            li.block__item-text_li Составление требований к ландшафту
+                            li.block__item-text_li Помощь в подборе специалистов
+                    .block__item-date 17.02.2019
+            .block__item.block__item--video
+                .block__item-wrap
+                  a.block__item-link(href="")
+                    .block__item-pic(style="background-image: url('images/content/base-1.png')")
+                    .block__item-content
+                        .block__item-title Внедрение BIM технологий и систем документооборота
+                        ul.block__item-text
+                            li.block__item-text_li Составление регламентирующих документов (EIR, BEP)
+                            li.block__item-text_li Составление требований к ландшафту
+                            li.block__item-text_li Помощь в подборе специалистов
+                    .block__item-date 17.02.2019
+            .block__item
+                .block__item-wrap
+                  a.block__item-link(href="")
+                    .block__item-pic(style="background-image: url('images/content/base-1.png')")
+                    .block__item-content
+                        .block__item-title Внедрение BIM технологий и систем документооборота
+                        ul.block__item-text
+                            li.block__item-text_li Составление регламентирующих документов (EIR, BEP)
+                            li.block__item-text_li Составление требований к ландшафту
+                            li.block__item-text_li Помощь в подборе специалистов
+                    .block__item-date 17.02.2019
+          .blcok-btn--center
+              a.btn(href="#") Показать еще
+    footer.footer-section
+      .container
+          .footer
+              .footer__left
+                  .footer__left_logo
+                      a.footer__left_logo-link(href="#")
+                          img.footer__left_logo-img(src="images/content/logo-white.png", alt="")
+                  .footer__left_text
+                      p Все права принадлежат ООО "ИМ консалт". 2019
+                      p 195196 г. Санкт-Петербург. ул.Рижская, д.1 / ул.Таллинская 7,  БЦ Р1, оф. 200-1.
+                      a.footer__link(href="tel:+78120000000") + 7 (812) 000-00-00
+                      <br>
+                      a.footer__link(href="mailto:info@im-consult.ru") info@im-consult.ru
+              .footer__right
+                  .social
+                      -
+                          var socials = [
+                              ['vk','#'],
+                              ['youtube','https://www.youtube.com/channel/UCHCWjU5d23j-A9Weqd34njg']
+                              ]
+                      ul.social__list
+                          each social in socials
+                              li.social__item
+                                  a(class=`social__link social__link_${social[0]}` href=`${social[1]}` target="_blank")
+                                      svg.social__link_svg(width='100%' height='100%')
+                                          use(xlink:href=`images/icons/sprite.svg#${social[0]}`)

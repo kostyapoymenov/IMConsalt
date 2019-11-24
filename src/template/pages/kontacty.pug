@@ -1,0 +1,115 @@
+extends ../loyout
+
+block variables
+    - var title= "Контакты"
+block content
+    header.header
+        .container
+            .header__inner
+                .header__logo
+                    a.logo(href="#")
+                        img.logo__img(src="images/content/logo.png", alt="")
+                .heder__nav
+                    nav.nav
+                        ul.nav__list
+                            li.nav__list_item
+                                a.nav__list_link(href="") Услуги
+                            li.nav__list_item
+                                a.nav__list_link(href="") База знаний
+                            li.nav__list_item
+                                a.nav__list_link(href="") Новости
+                            li.nav__list_item
+                                a.nav__list_link(href="") Контакты
+    section.contacts-section
+      .container 
+        .contacts
+          .contacts__left
+            h2.section-title напишите нам
+            form.form#form(action="" method="post" name="contact_form")
+              .form__text Если у Вас возникли вопросы или пожелания, сообщите их нам с помощью следующей формы.
+              .form__block.form-block--input
+                .form__block-item
+                  label.form-block__label(for="name") Ваше имя:
+                  input.form-block__field(type="text" name="name")
+                .form__block-item
+                  label.form-block__label(for="name") Email:
+                  input.form-block__field(type="text" name="name")
+                .form__block-item
+                  label.form-block__label(for="phone") Телефон:
+                  input.form-block__field(type="text" placeholder="+7 (555) 555-55-55" name="phone")
+                .form__block-item
+                  label.form-block__label(for="name") Название организации:
+                  input.form-block__field(type="text" name="name")
+              .form__block
+                .form__block-item
+                  label.form-block__label(for="comment") Вопрос:
+                  textarea.form-block__field(name="comment", cols="10", rows="4")
+              .form__block
+                .block-policy
+                  input.block-policy__input(id="userdistribution" type="checkbox" name="form-disribution" value="Подписался на рассылку" )
+                  .my-checkbox
+                  label.block-policy__label(for="userdistribution") 
+                    span.block-policy__text-bold Подписаться на рассылку ИМ Консалт
+                    <br> Узнавайте первыми о новостях, акциях, курсах и мероприятиях нашей компании
+                .block-policy
+                  input.block-policy__input(id="userAgreement" type="checkbox" name="form-policy" value="Согласие на политику конфиденциальности" checked onclick="this.checked=true")
+                  .my-checkbox
+                  label.block-policy__label(for="userAgreement") 
+                    span.block-policy__text-bold Я даю согласие на обработку моих персональных данных. 
+                    a.block-policy__link(href="policy" target="_blank") Политика конфиденциальности
+              .form__block
+                input.btn.btn--black(type="submit" value="Отправить")
+          .contacts__right
+            .contacts__block
+              h2.section-title наши контакты
+              .contacts__block_item.contacts__block_item--adress 195196 г. Санкт-Петербург, ул.Рижская, д.1 / ул.Таллинская 7, БЦ Р1, оф. 200-1.
+                svg.contacts__block_svg(width='100%' height='100%')
+                  use(xlink:href=`images/icons/sprite.svg#geolocation`)
+              .contacts__block_item.contacts__block_item--time пн-пт с 8:00 до 18:00 МСК
+                svg.contacts__block_svg(width='100%' height='100%')
+                  use(xlink:href=`images/icons/sprite.svg#clock`)
+              .contacts__block_item.contacts__block_item--phone
+                svg.contacts__block_svg(width='100%' height='100%')
+                  use(xlink:href=`images/icons/sprite.svg#phone`)
+                a.contacts__block_link(href="tel:+78120000000") +7 (812) 000-00-00
+              .contacts__block_item.contacts__block_item--mail
+                svg.contacts__block_svg(width='100%' height='100%')
+                  use(xlink:href=`images/icons/sprite.svg#email`)
+                a.contacts__block_link(href="mailto:info@im-consult.ru") info@im-consult.ru
+            .contacts__block
+              h2.section-title реквизиты
+              ul.contacts__block-list
+                li.contacts__block-list_item Общество с ограниченной ответственностью «ИМ Консалт»
+                li.contacts__block-list_item ИНН: ... / КПП: ...
+                li.contacts__block-list_item Юридический адрес: 195196 г.Санкт-Петербург, ул.Рижская, д.1 / ул.Таллинская 7, БЦ Р1, оф. 200-1.
+                li.contacts__block-list_item р/с: ...
+                li.contacts__block-list_item к/с: ...
+                li.contacts__block-list_item ОГРН: ...
+                li.contacts__block-list_item ОКАТО: ...
+                li.contacts__block-list_item ОКТМО: ...
+    footer.footer-section
+        .container
+            .footer
+                .footer__left
+                    .footer__left_logo
+                        a.footer__left_logo-link(href="#")
+                            img.footer__left_logo-img(src="images/content/logo-white.png", alt="")
+                    .footer__left_text
+                        p Все права принадлежат ООО "ИМ консалт". 2019
+                        p 195196 г. Санкт-Петербург. ул.Рижская, д.1 / ул.Таллинская 7,  БЦ Р1, оф. 200-1.
+                        a.footer__link(href="tel:+78120000000") + 7 (812) 000-00-00
+                        <br>
+                        a.footer__link(href="mailto:info@im-consult.ru") info@im-consult.ru
+                .footer__right
+                    .social
+                        -
+                            var socials = [
+                                ['vk','#'],
+                                ['youtube','#']
+                                ]
+                        ul.social__list
+                            each social in socials
+                                li.social__item
+                                    a(class=`social__link social__link_${social[0]}` href=`${social[1]}` target="_blank")
+                                        svg.social__link_svg(width='100%' height='100%')
+                                            use(xlink:href=`images/icons/sprite.svg#${social[0]}`)

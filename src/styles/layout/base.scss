@@ -61,11 +61,11 @@ input,
 textarea,
 select {
   border: 1px solid $black;
-  @include font-size(18px);
+  @include font-size(16px);
   line-height: 18px;
   padding: 11px 20px;
   outline: none;
-  text-transform: uppercase;
+  text-transform: none;
   appearance: none;
   &:focus {
     border: 1px solid $black;
@@ -79,4 +79,7 @@ input {
     border-bottom-color: $black;
     transition: all .3s ease-out;
   }
+}
+input[type=submit] {
+  cursor: pointer;
 }

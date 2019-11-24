@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты</title>
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="//db.onlinewebfonts.com/c/562fa31bba08b3f71cb71257ddb880d5?family=Verdana" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo"><a class="logo" href="#"><img class="logo__img" src="images/content/logo.png" alt=""></a></div>
+          <div class="heder__nav">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__list_item"><a class="nav__list_link" href="">Услуги</a></li>
+                <li class="nav__list_item"><a class="nav__list_link" href="">База знаний</a></li>
+                <li class="nav__list_item"><a class="nav__list_link" href="">Новости</a></li>
+                <li class="nav__list_item"><a class="nav__list_link" href="">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="contacts-section">
+      <div class="container"> 
+        <div class="contacts">
+          <div class="contacts__left">
+            <h2 class="section-title">напишите нам</h2>
+            <form class="form" id="form" action="" method="post" name="contact_form">
+              <div class="form__text">Если у Вас возникли вопросы или пожелания, сообщите их нам с помощью следующей формы.</div>
+              <div class="form__block form-block--input">
+                <div class="form__block-item">
+                  <label class="form-block__label" for="name">Ваше имя:</label>
+                  <input class="form-block__field" type="text" name="name">
+                </div>
+                <div class="form__block-item">
+                  <label class="form-block__label" for="name">Email:</label>
+                  <input class="form-block__field" type="text" name="name">
+                </div>
+                <div class="form__block-item">
+                  <label class="form-block__label" for="phone">Телефон:</label>
+                  <input class="form-block__field" type="text" placeholder="+7 (555) 555-55-55" name="phone">
+                </div>
+                <div class="form__block-item">
+                  <label class="form-block__label" for="name">Название организации:</label>
+                  <input class="form-block__field" type="text" name="name">
+                </div>
+              </div>
+              <div class="form__block">
+                <div class="form__block-item">
+                  <label class="form-block__label" for="comment">Вопрос:</label>
+                  <textarea class="form-block__field" name="comment" cols="10" rows="4"></textarea>
+                </div>
+              </div>
+              <div class="form__block">
+                <div class="block-policy">
+                  <input class="block-policy__input" id="userdistribution" type="checkbox" name="form-disribution" value="Подписался на рассылку">
+                  <div class="my-checkbox"></div>
+                  <label class="block-policy__label" for="userdistribution"> <span class="block-policy__text-bold">Подписаться на рассылку ИМ Консалт</span><br> Узнавайте первыми о новостях, акциях, курсах и мероприятиях нашей компании</label>
+                </div>
+                <div class="block-policy">
+                  <input class="block-policy__input" id="userAgreement" type="checkbox" name="form-policy" value="Согласие на политику конфиденциальности" checked onclick="this.checked=true">
+                  <div class="my-checkbox"></div>
+                  <label class="block-policy__label" for="userAgreement"> <span class="block-policy__text-bold">Я даю согласие на обработку моих персональных данных. </span><a class="block-policy__link" href="policy" target="_blank">Политика конфиденциальности</a></label>
+                </div>
+              </div>
+              <div class="form__block">
+                <input class="btn btn--black" type="submit" value="Отправить">
+              </div>
+            </form>
+          </div>
+          <div class="contacts__right">
+            <div class="contacts__block">
+              <h2 class="section-title">наши контакты</h2>
+              <div class="contacts__block_item contacts__block_item--adress">195196 г. Санкт-Петербург, ул.Рижская, д.1 / ул.Таллинская 7, БЦ Р1, оф. 200-1.
+                <svg class="contacts__block_svg" width="100%" height="100%">
+                  <use xlink:href="images/icons/sprite.svg#geolocation"></use>
+                </svg>
+              </div>
+              <div class="contacts__block_item contacts__block_item--time">пн-пт с 8:00 до 18:00 МСК
+                <svg class="contacts__block_svg" width="100%" height="100%">
+                  <use xlink:href="images/icons/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <div class="contacts__block_item contacts__block_item--phone">
+                <svg class="contacts__block_svg" width="100%" height="100%">
+                  <use xlink:href="images/icons/sprite.svg#phone"></use>
+                </svg><a class="contacts__block_link" href="tel:+78120000000">+7 (812) 000-00-00</a>
+              </div>
+              <div class="contacts__block_item contacts__block_item--mail">
+                <svg class="contacts__block_svg" width="100%" height="100%">
+                  <use xlink:href="images/icons/sprite.svg#email"></use>
+                </svg><a class="contacts__block_link" href="mailto:info@im-consult.ru">info@im-consult.ru</a>
+              </div>
+            </div>
+            <div class="contacts__block">
+              <h2 class="section-title">реквизиты</h2>
+              <ul class="contacts__block-list">
+                <li class="contacts__block-list_item">Общество с ограниченной ответственностью «ИМ Консалт»</li>
+                <li class="contacts__block-list_item">ИНН: ... / КПП: ...</li>
+                <li class="contacts__block-list_item">Юридический адрес: 195196 г.Санкт-Петербург, ул.Рижская, д.1 / ул.Таллинская 7, БЦ Р1, оф. 200-1.</li>
+                <li class="contacts__block-list_item">р/с: ...</li>
+                <li class="contacts__block-list_item">к/с: ...</li>
+                <li class="contacts__block-list_item">ОГРН: ...</li>
+                <li class="contacts__block-list_item">ОКАТО: ...</li>
+                <li class="contacts__block-list_item">ОКТМО: ...</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer">
+          <div class="footer__left">
+            <div class="footer__left_logo"><a class="footer__left_logo-link" href="#"><img class="footer__left_logo-img" src="images/content/logo-white.png" alt=""></a></div>
+            <div class="footer__left_text">
+              <p>Все права принадлежат ООО "ИМ консалт". 2019</p>
+              <p>195196 г. Санкт-Петербург. ул.Рижская, д.1 / ул.Таллинская 7,  БЦ Р1, оф. 200-1.</p><a class="footer__link" href="tel:+78120000000">+ 7 (812) 000-00-00</a><br><a class="footer__link" href="mailto:info@im-consult.ru">info@im-consult.ru</a>
+            </div>
+          </div>
+          <div class="footer__right">
+            <div class="social">
+              <ul class="social__list">
+                <li class="social__item"><a class="social__link social__link_vk" href="#" target="_blank">
+                    <svg class="social__link_svg" width="100%" height="100%">
+                      <use xlink:href="images/icons/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link social__link_youtube" href="#" target="_blank">
+                    <svg class="social__link_svg" width="100%" height="100%">
+                      <use xlink:href="images/icons/sprite.svg#youtube"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="burger-block">
+      <div class="burger"><span class="burger__line burger__line--1"></span><span class="burger__line burger__line--2"></span><span class="burger__line burger__line--3"></span></div>
+    </div>
+    <div class="burger-menu">
+      <nav class="burger-nav">
+        <ul class="burger-nav__list">
+          <li class="burger-nav__item"><a class="burger-nav__link nav__link--active" href="#">Услуги</a></li>
+          <li class="burger-nav__item"><a class="burger-nav__link" href="#">База знаний</a></li>
+          <li class="burger-nav__item"><a class="burger-nav__link" href="#">Новости</a></li>
+          <li class="burger-nav__item"><a class="burger-nav__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/libs/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
