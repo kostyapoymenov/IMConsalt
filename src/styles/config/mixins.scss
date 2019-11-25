@@ -8,18 +8,22 @@
   font-size: calculateRem($size);
 }
 
-@mixin media1150 {
-  @media screen and (max-width: $media1150) {
-    @content
-  }
-}
 
 @mixin media1080 {
   @media screen and (max-width: $media1080) {
     @content
   }
 }
-
+@mixin media1150 {
+  @media screen and (max-width: $media1150) {
+    @content
+  }
+}
+@mixin media1140 {
+  @media screen and (max-width: $media1140) {
+    @content
+  }
+}
 @mixin media1010 {
   @media screen and (max-width: $media1010) {
     @content

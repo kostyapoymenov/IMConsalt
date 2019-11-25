@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Наши услуги</title>
     <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.min.css">
     <link href="//db.onlinewebfonts.com/c/562fa31bba08b3f71cb71257ddb880d5?family=Verdana" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -144,8 +144,8 @@
                 <div class="advantage-block__text">Ускорение процесса проектирования на 30% и более (что приводит к значительной экономии рабочего времени и финансовых ресурсов на оплату труда)</div>
               </div>
             </div>
-            <div class="block__item__sourse">Источник: <a class="block__item__link" href="">http://nopriz.ru/upload/iblock/2cc/4.7_bim_rf_otchot.pdf</a></div>
           </div>
+          <div class="block__item__sourse">Источник: <a class="block__item__link" href="">http://nopriz.ru/upload/iblock/2cc/4.7_bim_rf_otchot.pdf</a></div>
         </div>
       </div>
     </section>
@@ -414,6 +414,52 @@
         </ul>
       </nav>
     </div>
+    <script id="formModal" type="formModal">
+      <div class="overlay-modal"></div>
+      <div class="modal-form">
+        <div class="popup-modal">
+          <div class="close close-modal"></div>
+          <h2 class="section-title">Заказать съемку</h2>
+          <form class="form card-block card-block--three-card" id="modal-form" action="" method="post" name="contact_form">
+            <div class="form-block card-block__item">
+              <div class="form-block__item">
+                <label class="form-block__label" for="name">Ваше имя</label>
+                <input class="form-block__field" type="text" name="name">
+              </div>
+              <div class="form-block__item">
+                <label class="form-block__label" for="number">Номер телефона</label>
+                <input class="form-block__field" type="text" name="number">
+              </div>
+              <div class="form-block__item">
+                <label class="form-block__label" for="time-select">во сколько вам позвонить?</label>
+                <select class="form-block__field form-block__select" name="time-select">
+                  <option class="form-block__option" value="0" selected="selected">В ЛЮБОЕ ВРЕМЯ</option>
+                  <option class="form-block__option" value="1">09:00 - 12:00 МСК</option>
+                  <option class="form-block__option" value="2">12:00 - 15:00 МСК</option>
+                  <option class="form-block__option" value="3">15:00 - 16:00 МСК</option>
+                  <option class="form-block__option" value="4">16:00 - 19:00 МСК</option>
+                  <option class="form-block__option" value="5">19:00 - 22:00 МСК</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-block card-block__item">
+              <div class="form-block__item">
+                <label class="form-block__label" for="comment">Комментарий</label>
+                <textarea class="form-block__field" name="comment" cols="30"></textarea>
+              </div>
+            </div>
+            <div class="form-block card-block__item form-block--text">
+              <input class="btn btn--black" type="submit" value="Заказать">
+            </div>
+          </form>
+        </div>
+      </div>
+    </script>
+    <div class="popup">
+      <div class="close"></div>
+      <iframe class="popup__iframe" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="overlay"></div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="js/libs/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>

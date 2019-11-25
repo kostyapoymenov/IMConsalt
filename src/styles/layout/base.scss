@@ -80,6 +80,13 @@ input {
     transition: all .3s ease-out;
   }
 }
+input {
+  &.btn {
+    &:focus {
+      border: 1px solid $blue;
+    }
+  }
+}
 input[type=submit] {
   cursor: pointer;
 }

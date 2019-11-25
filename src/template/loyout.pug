@@ -9,13 +9,15 @@ html(lang='ru')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         title #{title}
         link(rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon")
-        link(rel='stylesheet', href='styles/main.css')
+        link(rel='stylesheet', href='styles/main.min.css')
         link(href='//db.onlinewebfonts.com/c/562fa31bba08b3f71cb71257ddb880d5?family=Verdana', rel='stylesheet', type='text/css')
     body
         block content
 
         include section/burger.pug
-        //- include section/modal_form.pug
+        include section/modal_form.pug
+        include section/popup.pug
+        include section/overlay.pug
         
         script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
         script(type="text/javascript" src="js/libs/owl.carousel.min.js")

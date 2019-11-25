@@ -45,11 +45,52 @@
     }
   }
 }
+@include media1140 {
+  .dashed-line--right {
+    height: 145px;
+    top: 15%;
+    right: 3%;
+  }
+  .road:before {
+    top: 49%;
+    width: 91%;
+    right: 2rem;
+  }
+  .dashed-line--bottom {
+    width: 81%;
+    top: 82%;
+    left: 3.65rem;
+  }
+  .dashed-line--left {
+    height: 137px;
+    top: 50%;
+    left: 3.6rem;
+  }
+}
 @include media1080 {
   .form-block--input {
     .form__block-item {
       max-width: 220px;
     }
+  }
+  .road {
+    flex-direction: column;
+  }
+  .dashed-line--right {
+    height: 89%;
+    top: 5%;
+    right: 49.9%;
+  }
+  .dashed-line--left,
+  .dashed-line--bottom,
+  .road:after,
+  .road:before {
+    display: none;
+  }
+  .road__item {
+    background-color: $white;
+    margin: 20px 0;
+    padding-top: 5px;
   }
 }
 @include media1010 {
@@ -104,8 +145,35 @@
       max-width: 47%;
     }
   }
+  .serv__pic {
+    right: 30%;
+  }
+  .serv__content {
+    width: 87%;
+  }
+  .serv__border {
+    width: 75%;
+    left: 7%;
+  }
+  .statistics-section {
+    .block__item {
+      margin: 15px;
+      &:first-child {
+        margin-left: 15px;
+      }
+      &:nth-child(2n) {
+        margin-right: 15px;
+      }
+      &:nth-child(3n) {
+        margin-left: 15px;
+      }
+    }
+  }
 }
 @include phones {
+  .section-title {
+    line-height: 30px;
+  }
   .banner-block {
     width: 100%;
     padding: 20px;
@@ -239,5 +307,16 @@
   }
   .form__block .btn {
     width: 100%;
+  }
+  .serv-block {
+    padding: rem(45px) 0 rem(45px);
+  }
+  .serv__content {
+    padding: rem(30px) rem(20px) rem(35px) rem(30px);
+  }
+  .statistics-section {
+    .block {
+      flex-direction: row;
+    }
   }
 }

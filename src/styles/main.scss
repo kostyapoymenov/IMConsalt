@@ -14,6 +14,7 @@ $phones-xs: 568px;
 $media940: 940px;
 $media1010: 1010px;
 $media1080: 1080px;
+$media1140: 1140px;
 $media1150: 1150px;
 
 //base
@@ -36,6 +37,7 @@ $media1150: 1150px;
 @import "section/services.scss";
 @import "section/footer.scss";
 @import "section/modal.scss";
+@import "section/popup.scss";
 @import "section/burger.scss";
 
 

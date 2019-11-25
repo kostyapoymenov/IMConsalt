@@ -45,6 +45,9 @@ section {
       &:nth-child(5n) {
         margin-left: 0;
       }
+      @include tablets {
+        max-width: rem(340px);
+      }
     }
   }
   &--350 {
@@ -61,6 +64,9 @@ section {
       &:nth-child(4n) {
         margin-left: 0;
       }
+      @include tablets {
+        max-width: rem(340px);
+      }
     }
   }
   &--370 {
@@ -76,6 +82,9 @@ section {
       }
       &:nth-child(4n) {
         margin-left: 0;
+      }
+      @include tablets {
+        max-width: rem(340px);
       }
     }
   }
